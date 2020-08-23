@@ -56,3 +56,8 @@ jobs:
       run: |
         cd /home/
         ls -a
+        
+    - name: LS Runner
+      run: |
+        cd /home/runner/
+        ls -a

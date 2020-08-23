@@ -46,4 +46,8 @@ jobs:
       run: sudo apt-get install -y autokey-gtk
     
     - name: LS
-      run: ls -a
+      run: |
+        ls -a
+        pwd
+        cd ..
+        ls -a

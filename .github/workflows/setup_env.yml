@@ -34,6 +34,9 @@ jobs:
         sudo apt-get update
         sudo apt-get install ubuntu-desktop --no-install-recommends
     
+    - name: Start ubuntu desktop
+      run: sudo systemctl status gdm
+    
     - name: Install Autokey
       run: |
         sudo apt-get update -y
@@ -43,6 +46,6 @@ jobs:
       run: |
         cd /home/runner/.config
         ls -a
-      
+    
     - name: Run autokey script
       run: autokey-run -s aa

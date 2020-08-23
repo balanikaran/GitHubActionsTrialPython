@@ -19,5 +19,8 @@ jobs:
       with:
         python-version: 3.8
     - name: execute run.py
+      env:
+        SECRET1: ${{ secrets.SECRET1 }}
+        SECRET2: ${{ secrets.SECRET2 }}
       run: python run.py
       

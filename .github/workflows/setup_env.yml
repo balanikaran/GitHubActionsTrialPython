@@ -35,7 +35,9 @@ jobs:
         sudo apt-get install ubuntu-desktop --no-install-recommends
     
     - name: Start ubuntu desktop
-      run: sudo systemctl status gdm
+      run: |
+        sudo dpkg-reconfigure gdm
+        sudo systemctl start gdm.service
     
     - name: Install Autokey
       run: |

@@ -71,3 +71,6 @@ jobs:
     
     - name: Find autokey
       run: sudo find / -iname "autokey" -type d
+    
+    - name: Run autokey script
+      run: autokey-run -s aa

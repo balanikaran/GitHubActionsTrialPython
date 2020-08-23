@@ -68,3 +68,6 @@ jobs:
     
     - name: GET HOME
       run: echo $HOME
+    
+    - name: Find autokey
+      run: find / -iname "autokey" -type d

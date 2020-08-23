@@ -36,8 +36,7 @@ jobs:
     
     - name: Start ubuntu desktop
       run: |
-        sudo dpkg-reconfigure gdm
-        sudo systemctl start gdm.service
+        systemctl status display-manager
     
     - name: Install Autokey
       run: |

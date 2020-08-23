@@ -26,16 +26,6 @@ jobs:
       with:
         python-version: 3.8
     
-    - name: Install Autokey
-      run: |
-        sudo apt-get update -y
-        sudo apt-get install -y autokey-gtk
-    
-    - name: LS home
-      run: |
-        cd /home/
-        ls -a
-    
     - name: GET HOME
       run: echo $HOME
       
@@ -44,5 +34,15 @@ jobs:
         sudo apt-get update
         sudo apt-get install ubuntu-desktop --no-install-recommends
     
+    - name: Install Autokey
+      run: |
+        sudo apt-get update -y
+        sudo apt-get install -y autokey-gtk
+      
+    - name: LS home
+      run: |
+        cd /home/runner/.config
+        ls -a
+      
     - name: Run autokey script
       run: autokey-run -s aa

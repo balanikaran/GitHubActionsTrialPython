@@ -1,6 +1,9 @@
-name: Pylint
+name: Run run.py on every commit
 
-on: [push]
+on:
+  push:
+    branches: 
+      - master
 
 jobs:
   build:

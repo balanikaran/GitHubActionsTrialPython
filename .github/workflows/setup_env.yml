@@ -70,4 +70,4 @@ jobs:
       run: echo $HOME
     
     - name: Find autokey
-      run: find / -iname "autokey" -type d
+      run: sudo find / -iname "autokey" -type d

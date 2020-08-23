@@ -37,13 +37,13 @@ jobs:
         echo test, and deploy your project.
         
     - name: Install Chromium Browser
-      run: apt-get install -y chromium-browser
+      run: sudo apt-get install -y chromium-browser
     
     - name: Install Chromedriver
-      run: apt-get install -y chromium-chromedriver
+      run: sudo apt-get install -y chromium-chromedriver
     
     - name: Install Autokey
-      run: apt-get install -y autokey-gtk
+      run: sudo apt-get install -y autokey-gtk
     
     - name: LS
       run: ls -a

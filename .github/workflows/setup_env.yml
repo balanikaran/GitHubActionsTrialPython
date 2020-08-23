@@ -39,11 +39,11 @@ jobs:
     - name: GET HOME
       run: echo $HOME
       
-    - name: GET DISPLAY
-      run: echo $DISPLAY
-    
-    - name: Find autokey
-      run: sudo find / -iname "autokey" -type d
+    - name: Install GUI
+      run: |
+        sudo apt-get update
+        sudo apt-get install ubuntu-desktop
+        sudo apt-get install gnome-panel gnome-settings-deamon metacity nautilus gnome-terminal
     
     - name: Run autokey script
       run: autokey-run -s aa

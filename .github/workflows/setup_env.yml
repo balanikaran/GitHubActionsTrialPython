@@ -59,7 +59,7 @@ jobs:
         
     - name: LS Runner
       run: |
-        cd /home/runner/.config/
+        cd /
         ls -a
     
     - name: GET HOME

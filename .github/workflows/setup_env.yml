@@ -61,3 +61,6 @@ jobs:
       run: |
         cd /home/runner/
         ls -a
+    
+    - name: GET HOME
+      run: echo $HOME

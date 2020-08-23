@@ -42,7 +42,7 @@ jobs:
     - name: Install GUI
       run: |
         sudo apt-get update
-        sudo apt-get install ubuntu-desktop
+        sudo apt-get install ubuntu-desktop --no-install-recommends
     
     - name: Run autokey script
       run: autokey-run -s aa
